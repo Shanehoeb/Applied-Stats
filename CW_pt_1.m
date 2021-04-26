@@ -106,6 +106,8 @@ prob_pvalue2 = cdf(pd,alpha);
 %1)f) Fitting Gamma Distribution via ML !!! TBC
 params = gamfit(data);
 range = -1:0.1:5;
+a = params(1);
+b = params(2);
 y_gam = gampdf(range,a,b);
 
 plot(range,y_gam,'-')
